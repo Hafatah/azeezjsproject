@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+         body{
+            background-image: url('indexbackground.jpeg');
+            z-index: -1;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .cevi{
+          width: 100%;
+          height: 100%;
+        }
+      .dropy{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+        p{
+            background-color: cyan;
+            color: mintcream;
+            width:fit-content;
+            font-size: 35px;
+        }
+        h3{
+            background-color: chartreuse;
+            color:white;
+            width: fit-content;
+        }
+        h2{
+            background-color: aqua;
+            color: aliceblue;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <div class="cevi">
+        <div  class="dropy">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                DAY 1
+                </button>
+                <ul class="dropdown-menu">
+                <li><button class="dropdown-item" type="button"><a href="Day 1.html">JAVA VS JAVASCRIPT</a></button></li>
+                <li><button class="dropdown-item" type="button"  disabled></button></li>
+                <li><button class="dropdown-item" type="button"  disabled></button></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  DAY 2
+                </button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item" type="button"><a href="reservekeywords.html">RESERVE KEY WORDS</a></button></li>
+                  <li><button class="dropdown-item" type="button"><a href="variables.html">VARIABLES</a></button></li>
+                  <li><button class="dropdown-item" type="button"><a href="historyuofjs.html">HISTORY OF JS.</a></button></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  DAY 3
+                </button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item" type="button"><a href="string.html">IDENTIFICATION OF STRING</a></button></li>
+                  <li><button class="dropdown-item" type="button"><a href="biginit.html">DIFFERENCE BETWEEEN BIGINT AND NO</a></button></li>
+                  <li><button class="dropdown-item" type="button"  disabled></button></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  DAY 4
+                </button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item" type="button"><a href="array.html">ARRAY</a></button></li>
+                  <li><button class="dropdown-item" type="button"></button></li>
+                  <li><button class="dropdown-item" type="button"></button></li>
+                </ul>
+            </div>
+            <!-- <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item" type="button">Action</button></li>
+                  <li><button class="dropdown-item" type="button">Another action</button></li>
+                  <li><button class="dropdown-item" type="button">Something else here</button></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item" type="button">Action</button></li>
+                  <li><button class="dropdown-item" type="button">Another action</button></li>
+                  <li><button class="dropdown-item" type="button">Something else here</button></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item" type="button">Action</button></li>
+                  <li><button class="dropdown-item" type="button">Another action</button></li>
+                  <li><button class="dropdown-item" type="button">Something else here</button></li>
+                </ul>
+            </div> -->
+        </div>
+        <div>
+            <div>
+                <h2>RESERVE KEY WORDS</h2>
+                <ul>
+                    <li>
+                        <h3>LET</h3>
+                        <p>
+                            The let keyword is used to declare block-scoped variables in JavaScript.<br><br>
+                            Variables declared with let are limited in scope to the block (enclosed by {}) in which they are defined.<br><br>
+                            Unlike variables declared with var, let variables cannot be redeclared in the same scope.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>ELSE</h3>
+                        <p>
+                            The else keyword is used in conjunction with an if statement to specify an alternative block of code <br><br>
+                            to execute if the condition of the if statement evaluates to false.
+                            It provides a way to handle cases when the condition in the if statement is not met.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>SWITCH</h3>
+                        <p>
+                            The switch keyword is used to perform different actions based on different conditions in JavaScript.<br><br>
+                            It allows you to specify multiple possible paths of execution depending on the value of an expression.<br><br>
+                            The switch statement contains case blocks that are executed when the expression matches a specific value.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>TYPEOF</h3>
+                        <p>
+                            The typeof keyword is used to determine the data type of a given expression or variable in JavaScript.<br><br>
+                            It returns a string indicating the data type, such as 'number', 'string',<br><br> 'boolean', 'object', 'function', or 'undefined'.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>FOR</h3>
+                        <p>
+                            The for keyword is used to create a loop in JavaScript.<br><br>
+                            It allows you to repeatedly execute a block of code a specified<br><br> number of times or
+                             until a specified condition is met.<br><br>
+                            The for loop typically consists of an initialization, a condition, 
+                            an increment or decrement,<br><br> and the code to be executed in each iteration.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>BREAK</h3>
+                        <p>
+                            The break keyword is used to terminate a loop or switch statement.<br><br>
+                            When break is encountered inside a loop or switch, the control is transferred<br><br> 
+                            to the statement immediately following the loop or switch.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'></script>
+</body>
+</html>
