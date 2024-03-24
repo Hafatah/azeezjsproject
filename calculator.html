@@ -8,20 +8,18 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
         <style>
             body{
-                 background-image: url('indexbackground.jpeg');
-                 z-index: -1;
-                 background-repeat: no-repeat;
-                 background-size: cover;
-             }
+                background-image: url('indexbackground.jpeg');
+                z-index: -1;
+                background-repeat: no-repeat;
+                background-size: cover;
+                overflow-y: auto;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
              .cevi{
+                margin-top: 10%;
                width: 100%;
                height: 100%;
              }
-           .dropy{
-             display: flex;
-             justify-content: center;
-             align-items: center;
-           }
            a{
              text-decoration: none;
              color: rgba(0, 0, 0, 0.61);
@@ -30,12 +28,14 @@
                 display: flex;
                 justify-content: center;
            }
-           button{
+           #usit{
             background-color: brown;
             color: aquamarine;
             border: none;
             border-radius: 5px;
             padding: 10px;
+            width: 30px;
+            margin: 0% auto;
            }
            .calc{
             width:100%;
@@ -45,108 +45,127 @@
            .calculator{
             width: fit fit-content;
             border-radius: 15px;
-            background-color: chartreuse;
+            background-color: rgb(0, 0, 0);
             padding: 20px;
-
            }
            input{
             border: none;
-            background-color: rgb(139, 139, 19);
             padding:10px ;
             border-radius: 13px;
+            width: 100%;
+            background-color: honeydew;
            }
            .input:focus{
             border: none;
-            outline: 1px solid red;
-            background: none;
+            background: transparent;
            }
-           @media screen and(max-width:768px){
-            .dropy{
-                display: flex;
-                flex-direction: column;
-            }
+           .input:active{
+            border: none;
+            background: transparent;
            }
+           h2{
+            color: snow;
+           }
+           span{
+            color: white;
+           }
+           
         </style>
     </head>
     <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">JS PROJECTS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                DAY 1
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="Day 1.html">JAVA VS JAVASCRIPT</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                DAY 2
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="displayin js.html">DISLAY METHODS IN JS</a></li>
+                                <li><a class="dropdown-item" href="reservekeywords.html">RESERVE KEY WORDS</a></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                DAY 3
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="variables.html">VARIABLES</a></li>
+                                <li><a class="dropdown-item" href="historyuofjs.html">HISTORY OF JS.</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                DAY 4
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="string.html">IDENTIFICATION OF A STRING </a></li>
+                                <li><a  class="dropdown-item" href="biginit.html">DIFFERENCE BETWEEEN BIGINT AND NO</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                DAY 5
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="array.html">ARRAY</a></li>
+                            </ul>
+                        </li>
+                    </ul> 
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                DAY 6
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="operators.html">OPERATORS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                DAY 7
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="retirement.html">RETIREMENT CALCULATOR</a></li>
+                                <li><a  class="dropdown-item" href="calculator.html">SIMPLE CALCULATOR</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <div class="cevi">
-            <div  class="dropy">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DAY 1
-                    </button>
-                    <ul class="dropdown-menu">
-                    <li><button class="dropdown-item" type="button"><a href="Day 1.html">JAVA VS JAVASCRIPT</a></button></li>
-                    <li><button class="dropdown-item" type="button"  disabled></button></li>
-                    <li><button class="dropdown-item" type="button"  disabled></button></li>
-                    </ul>
-                </div>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DAY 2
-                    </button>
-                    <ul class="dropdown-menu">
-                    <li><button class="dropdown-item" type="button"><a href="reservekeywords.html">RESERVE KEY WORDS</a></button></li>
-                    <li><button class="dropdown-item" type="button"><a href="variables.html">VARIABLES</a></button></li>
-                    <li><button class="dropdown-item" type="button"><a href="historyuofjs.html">HISTORY OF JS.</a></button></li>
-                    </ul>
-                </div>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DAY 3
-                    </button>
-                    <ul class="dropdown-menu">
-                    <li><button class="dropdown-item" type="button"><a href="string.html">IDENTIFICATION OF STRING</a></button></li>
-                    <li><button class="dropdown-item" type="button"><a href="biginit.html">DIFFERENCE BETWEEEN BIGINT AND NO</a></button></li>
-                    <li><button class="dropdown-item" type="button"  disabled></button></li>
-                    </ul>
-                </div>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DAY 4
-                    </button>
-                    <ul class="dropdown-menu">
-                    <li><button class="dropdown-item" type="button"><a href="array.html">ARRAY</a></button></li>
-                    <li><button class="dropdown-item" type="button"></button></li>
-                    <li><button class="dropdown-item" type="button"></button></li>
-                    </ul>
-                </div>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DAY 7
-                    </button>
-                    <ul class="dropdown-menu">
-                    <li><button class="dropdown-item" type="button"><a href="retirement.html">Retirement Age</a></button></li>
-                    <li><button class="dropdown-item" type="button"><a href="calculator.html">Simple calulator</a></button></li>
-                    </ul>
-                </div>
-                <!-- <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                    </button>
-                    <ul class="dropdown-menu">
-                    <li><button class="dropdown-item" type="button">Action</button></li>
-                    <li><button class="dropdown-item" type="button">Another action</button></li>
-                    <li><button class="dropdown-item" type="button">Something else here</button></li>
-                    </ul>
-                </div>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                    </button>
-                    <ul class="dropdown-menu">
-                    <li><button class="dropdown-item" type="button">Action</button></li>
-                    <li><button class="dropdown-item" type="button">Another action</button></li>
-                    <li><button class="dropdown-item" type="button">Something else here</button></li>
-                    </ul>
-                </div>  -->
-            </div> -->
             <div class="calc">
                 <div class="calculator">
+                    <div class="h2">
                     <h2>SIMPLE CALCULATOR</h2>
-                    <input type="text" id="hull" placeholder="firstvalue">
-                    <span id="mysymbol"></span>
-                    <input type="text" id="hill" placeholder="secondvalue">
+                    </div>
+                    <input type="text" id="hull" placeholder="FIRSTVALUE"><br><br>
+                    <span id="mysymbol"></span><br><br>
+                    <input type="text" id="hill" placeholder="SECONDVALUE">
                     <span id="myoutput"></span>       
                     <br><br>
                     <button id="usit" onclick="minusit()">-</button>
@@ -167,7 +186,7 @@
                 ${firstvalue - secondvalue}`
             }
 
-            function plus(){
+            let plus= ()=>{
                 let firstvalue=Number(document.getElementById('hull').value);
                 let secondvalue=Number(document.getElementById('hill').value);
 
@@ -176,7 +195,7 @@
                 ${firstvalue + secondvalue}`
             }
 
-            function divide(){
+            divide = function(){
                 let firstvalue=document.getElementById('hull').value;
                 let secondvalue=document.getElementById('hill').value;
 
@@ -194,7 +213,7 @@
                 ${firstvalue * secondvalue}`
             }
 
-            function modulus(){
+            modulus =function(){
                 let firstvalue=document.getElementById('hull').value;
                 let secondvalue=document.getElementById('hill').value;
 

@@ -8,24 +8,26 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
         <style>
             body{
-                background-color: rgba(172, 107, 118, 0.63);
-                font-family: Georgia, 'Times New Roman', Times, serif;
                 overflow-y: auto;
-            }
-            .cevi{
-                width: 100%;
-                height:100%;
-            }
-            .devi{
-                
-            }
-            p{
                 font-family: Georgia, 'Times New Roman', Times, serif;
-                font-size:20px;
+                background-color: rgba(216, 191, 216, 0.781);
             }
-            .eg{
-                display: flex;
-                justify-content: center;
+            table{
+                border: 1px solid black;
+                background-color: rgba(255, 99, 71, 0.493);
+                width: 75%;
+                margin: 0 auto;
+            }
+            table,th{
+                border:1px solid black;
+                font-size: 25px;
+            }
+            table,td{
+                border: 1px solid black;
+                font-size: 20px;
+            }
+            h2{
+                text-align: center;
             }
         </style>
     </head>
@@ -115,56 +117,88 @@
                     </div>
                 </div>
             </nav>
-            <div class="cevi">
-                <h2 style="text-align: center;">WAYS TO IDENTIFY A STRING IN JS.</h2>
-                <div class="devi  container-fluid">
-                    <p>In JS., there are three ways to identify a string:</p>
-                    <strong style="font-size: 30px;">Single Qoutes:</strong>
-                    <p>Single quotes are commonly used to define a string in JavaScript. <br>
-                        However, if the string itself contains a single quote, <br>
-                        you would need to escape it using a backslash (\) before the single quote to avoid syntax errors.
-                    </p>
-                    <table border="2px" cellpadding="1px" cellspacing="1px">
-                        <tr>
-                            <td><strong>Example:</strong></td>
-                            <td>let str1 = 'Hello World!';</td>
-                        </tr>
-                    </table><br>
-                    <strong style="font-size: 30px;">Double Qoutes:</strong>
-                    <p>
-                        Double quotes can also be used to define a string in JavaScript.
-                         Similarly, if the string contains a double quote, you need to escape it using a backslash (\) before the double quote.
-                    </p>
-                    <table border="2px" cellpadding="1px" cellspacing="1px">
-                        <tr>
-                            <td><strong>Example:</strong></td>
-                            <td>let str2 = "Hello World!";</td>
-                        </tr>
-                    </table><br>
-                    <strong style="font-size: 30px;">Backticks (Template literals):</strong>
-                    <p>
-                        Backticks were introduced in ES6 (ECMAScript 2015) and are used for creating template literals. They provide additional functionality to define multi-line strings, embed variables, expressions, or even other functions directly within the string using the ${} syntax. This can make writing and formatting complex string constructions more convenient.
-                    </p>
-                    <table border="2px"cellspacing="1px">
-                        <tr>
-                        <td><strong>Example:</strong></td>
-                        </tr>
-                        <tr>
-                            <td>let name='john</td>
-                            <td>let age=30</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                console.log(greeting);
-                                Output: Hello, my name is John Doe and I am 30 years old.
-                            </td>
-                        </tr>
-                    </table>
-                    <p>Overall, the difference between the three ways of identifying strings in 
-                        JavaScript is primarily based on personal preference and 
-                        the requirements of your specific use case.
-                    </p>
-                </div>
+            <div class="container-fluid">
+                <h2>WAYS BY WHICH JS.CODE CAN BE DISPLAYED</h2>
+                <table>
+                    <tr>
+                        <th>DISPLAY METHOD</th>
+                        <th>EXAMPLE</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>USING DOM MANIPULATION </strong>
+                            <P>JavaScript can dynamically create, modify, and delete HTML elements using the Document Object Model (DOM).<br> This method offers fine-grained control over how JavaScript-generated content is displayed on the page.</P>
+                        </td>
+                        <td>
+                            <p>
+                                id="output"document.getElementById("output")<br>.innerHTML = "Hello, world!";
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>USING ALERT()</strong>
+                            <P>The alert() method displays a modal dialog with a message and an OK button. <BR>It is often used for simple notifications or alerts.</P>
+                        </td>
+                        <td>
+                            alert("helloworld")
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>USING WEB APIs</strong>
+                            <p>
+                                Modern web APIs such as Canvas, Web Audio, WebSockets, etc.,<br> allow for rich and interactive content to be displayed in the browser using JavaScript.<br> These APIs enable advanced features like drawing graphics, playing audio, and real-time communication.
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                / Example using Canvas API<br>
+                                var canvas = document.getElementById("myCanvas");<br>
+                                var ctx = canvas.getContext("2d");<br>
+                                ctx.font = "30px Arial";<br>
+                                ctx.fillText("Hello, world!", 10, 50);
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>USING PROMPT()</strong>
+                            <p>The prompt() method displays a modal dialog with an optional message and an input field for the user to enter data.<br> It is commonly used to gather user input.</p>
+                        </td>
+                        <td>
+                            <p>
+                                var name = prompt("Enter your name:");<br>
+                                console.log("Hello, " + name + "!");
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>USING CONFIRM</strong>
+                            <P>
+                                The confirm() method displays a modal dialog with a message and OK/Cancel buttons.<BR> It returns true if the user clicks OK and false if the user clicks Cancel.
+                            </P>
+                        </td>
+                        <td>
+                            <p>
+                                var result = confirm("Are you sure?");<br>
+                                console.log("User confirmed: " + result);
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>USING CONSOLE OUTPUT</strong>
+                            <p>
+                                JavaScript code can output information or debug messages to the console using the console.log() method.<br> This is commonly used for debugging purposes.
+                            </p>
+                        </td>
+                        <td>
+                            <p>console.log("Hello, world!");</p>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
         <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'></script>

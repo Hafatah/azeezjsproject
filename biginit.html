@@ -8,24 +8,15 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
         <style>
             body{
-                background-color: rgba(172, 107, 118, 0.63);
-                font-family: Georgia, 'Times New Roman', Times, serif;
                 overflow-y: auto;
-            }
-            .cevi{
-                width: 100%;
-                height:100%;
-            }
-            .devi{
-                
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                background-color: rgba(247, 105, 4, 0.418);
             }
             p{
-                font-family: Georgia, 'Times New Roman', Times, serif;
-                font-size:20px;
+                font-size: 20px;
             }
-            .eg{
-                display: flex;
-                justify-content: center;
+            li{
+                font-size: 20px;
             }
         </style>
     </head>
@@ -115,56 +106,29 @@
                     </div>
                 </div>
             </nav>
-            <div class="cevi">
-                <h2 style="text-align: center;">WAYS TO IDENTIFY A STRING IN JS.</h2>
-                <div class="devi  container-fluid">
-                    <p>In JS., there are three ways to identify a string:</p>
-                    <strong style="font-size: 30px;">Single Qoutes:</strong>
-                    <p>Single quotes are commonly used to define a string in JavaScript. <br>
-                        However, if the string itself contains a single quote, <br>
-                        you would need to escape it using a backslash (\) before the single quote to avoid syntax errors.
-                    </p>
-                    <table border="2px" cellpadding="1px" cellspacing="1px">
-                        <tr>
-                            <td><strong>Example:</strong></td>
-                            <td>let str1 = 'Hello World!';</td>
-                        </tr>
-                    </table><br>
-                    <strong style="font-size: 30px;">Double Qoutes:</strong>
-                    <p>
-                        Double quotes can also be used to define a string in JavaScript.
-                         Similarly, if the string contains a double quote, you need to escape it using a backslash (\) before the double quote.
-                    </p>
-                    <table border="2px" cellpadding="1px" cellspacing="1px">
-                        <tr>
-                            <td><strong>Example:</strong></td>
-                            <td>let str2 = "Hello World!";</td>
-                        </tr>
-                    </table><br>
-                    <strong style="font-size: 30px;">Backticks (Template literals):</strong>
-                    <p>
-                        Backticks were introduced in ES6 (ECMAScript 2015) and are used for creating template literals. They provide additional functionality to define multi-line strings, embed variables, expressions, or even other functions directly within the string using the ${} syntax. This can make writing and formatting complex string constructions more convenient.
-                    </p>
-                    <table border="2px"cellspacing="1px">
-                        <tr>
-                        <td><strong>Example:</strong></td>
-                        </tr>
-                        <tr>
-                            <td>let name='john</td>
-                            <td>let age=30</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                console.log(greeting);
-                                Output: Hello, my name is John Doe and I am 30 years old.
-                            </td>
-                        </tr>
-                    </table>
-                    <p>Overall, the difference between the three ways of identifying strings in 
-                        JavaScript is primarily based on personal preference and 
-                        the requirements of your specific use case.
-                    </p>
-                </div>
+            <div class="container">
+                <p>In JavaScript, number and BigInt are both data types used to represent numeric values, but they have some key differences:</p>
+                <p>Number</p>
+                <ul>
+                    <li>The number type represents numeric values using double-precision 64-bit floating-point format defined by the IEEE 754 standard.</li>
+                    <li>It can represent both integer and floating-point numbers.</li>
+                    <li>Numbers are limited in precision due to the nature of floating-point representation, which can lead to rounding errors when dealing with very large or very small numbers.</li>
+                    <li>The maximum safe integer that can be represented in JavaScript's number type without loss of precision is 2^53 - 1, which is approximately 9 quadrillion (9007199254740991).</li>
+                    <li>Numbers are used for most mathematical operations and are the default choice for arithmetic calculations.
+                </ul>
+                <p><span>Example:</span>let num = 123;</p>
+                <p>BigInt</p>
+                <ul>
+                    <li>The BigInt type was introduced in ECMAScript 2020 (ES11) to represent arbitrarily large integers.</li>
+                    <li>It can represent integers with arbitrary precision, limited only by available memory.</li>
+                    <li>BigInt literals are created by appending n to the end of an integer or by calling the BigInt() constructor.</li>
+                    <li>BigInts are used when you need to perform operations on integers larger than the maximum safe integer for regular number type.</li>
+                    <li>BigInts cannot be used with mathematical operators that are only defined for number, such as +, -, /, and *. Instead, BigInt-specific methods and operators are provided, like BigInt.asUintN(), BigInt.asIntN(), BigInt.prototype.toString(), etc.</li>
+                </ul>
+                <p><span>Example:</span>let bigNum = 123n;</p>
+                <p>
+                    In summary, the main difference between number and BigInt in JavaScript is the range of values they can represent and the precision they offer. number is used for regular numeric computations and is limited by the IEEE 754 standard, while BigInt is used for handling arbitrarily large integers with arbitrary precision.
+                </p>
             </div>
         </div>
         <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'></script>

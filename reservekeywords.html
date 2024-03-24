@@ -1,175 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <style>
-         body{
-            background-image: url('indexbackground.jpeg');
-            z-index: -1;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .cevi{
-          width: 100%;
-          height: 100%;
-        }
-      .dropy{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-        p{
-            background-color: cyan;
-            color: mintcream;
-            width:fit-content;
-            font-size: 35px;
-        }
-        h3{
-            background-color: chartreuse;
-            color:white;
-            width: fit-content;
-        }
-        h2{
-            background-color: aqua;
-            color: aliceblue;
-            width: fit-content;
-        }
-    </style>
-</head>
-<body>
-    <div class="cevi">
-        <div  class="dropy">
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                DAY 1
-                </button>
-                <ul class="dropdown-menu">
-                <li><button class="dropdown-item" type="button"><a href="Day 1.html">JAVA VS JAVASCRIPT</a></button></li>
-                <li><button class="dropdown-item" type="button"  disabled></button></li>
-                <li><button class="dropdown-item" type="button"  disabled></button></li>
-                </ul>
-            </div>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  DAY 2
-                </button>
-                <ul class="dropdown-menu">
-                  <li><button class="dropdown-item" type="button"><a href="reservekeywords.html">RESERVE KEY WORDS</a></button></li>
-                  <li><button class="dropdown-item" type="button"><a href="variables.html">VARIABLES</a></button></li>
-                  <li><button class="dropdown-item" type="button"><a href="historyuofjs.html">HISTORY OF JS.</a></button></li>
-                </ul>
-            </div>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  DAY 3
-                </button>
-                <ul class="dropdown-menu">
-                  <li><button class="dropdown-item" type="button"><a href="string.html">IDENTIFICATION OF STRING</a></button></li>
-                  <li><button class="dropdown-item" type="button"><a href="biginit.html">DIFFERENCE BETWEEEN BIGINT AND NO</a></button></li>
-                  <li><button class="dropdown-item" type="button"  disabled></button></li>
-                </ul>
-            </div>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  DAY 4
-                </button>
-                <ul class="dropdown-menu">
-                  <li><button class="dropdown-item" type="button"><a href="array.html">ARRAY</a></button></li>
-                  <li><button class="dropdown-item" type="button"></button></li>
-                  <li><button class="dropdown-item" type="button"></button></li>
-                </ul>
-            </div>
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                DAY 7
-              </button>
-              <ul class="dropdown-menu">
-                <li><button class="dropdown-item" type="button"><a href="retirement.html"></a></button></li>
-                <li><button class="dropdown-item" type="button"><a href="calculator.html"></a></button></li>
-              </ul>
-          </div>
-            <!--<div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </button>
-                <ul class="dropdown-menu">
-                  <li><button class="dropdown-item" type="button">Action</button></li>
-                  <li><button class="dropdown-item" type="button">Another action</button></li>
-                  <li><button class="dropdown-item" type="button">Something else here</button></li>
-                </ul>
-            </div>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </button>
-                <ul class="dropdown-menu">
-                  <li><button class="dropdown-item" type="button">Action</button></li>
-                  <li><button class="dropdown-item" type="button">Another action</button></li>
-                  <li><button class="dropdown-item" type="button">Something else here</button></li>
-                </ul>
-            </div> -->
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        <style>
+             body{
+                background-color: rgba(255, 0, 255, 0.356);
+                overflow-y: auto;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+             }
+             h1{
+                text-align: center;
+             }
+             p{
+                font-size: 20px;
+             }
+        </style>
+    </head>
+    <body>
         <div>
-            <div>
-                <h2>RESERVE KEY WORDS</h2>
-                <ul>
-                    <li>
-                        <h3>LET</h3>
-                        <p>
-                            The let keyword is used to declare block-scoped variables in JavaScript.<br><br>
-                            Variables declared with let are limited in scope to the block (enclosed by {}) in which they are defined.<br><br>
-                            Unlike variables declared with var, let variables cannot be redeclared in the same scope.
-                        </p>
-                    </li>
-                    <li>
-                        <h3>ELSE</h3>
-                        <p>
-                            The else keyword is used in conjunction with an if statement to specify an alternative block of code <br><br>
-                            to execute if the condition of the if statement evaluates to false.
-                            It provides a way to handle cases when the condition in the if statement is not met.
-                        </p>
-                    </li>
-                    <li>
-                        <h3>SWITCH</h3>
-                        <p>
-                            The switch keyword is used to perform different actions based on different conditions in JavaScript.<br><br>
-                            It allows you to specify multiple possible paths of execution depending on the value of an expression.<br><br>
-                            The switch statement contains case blocks that are executed when the expression matches a specific value.
-                        </p>
-                    </li>
-                    <li>
-                        <h3>TYPEOF</h3>
-                        <p>
-                            The typeof keyword is used to determine the data type of a given expression or variable in JavaScript.<br><br>
-                            It returns a string indicating the data type, such as 'number', 'string',<br><br> 'boolean', 'object', 'function', or 'undefined'.
-                        </p>
-                    </li>
-                    <li>
-                        <h3>FOR</h3>
-                        <p>
-                            The for keyword is used to create a loop in JavaScript.<br><br>
-                            It allows you to repeatedly execute a block of code a specified<br><br> number of times or
-                             until a specified condition is met.<br><br>
-                            The for loop typically consists of an initialization, a condition, 
-                            an increment or decrement,<br><br> and the code to be executed in each iteration.
-                        </p>
-                    </li>
-                    <li>
-                        <h3>BREAK</h3>
-                        <p>
-                            The break keyword is used to terminate a loop or switch statement.<br><br>
-                            When break is encountered inside a loop or switch, the control is transferred<br><br> 
-                            to the statement immediately following the loop or switch.
-                        </p>
-                    </li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">JS PROJECTS</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    DAY 1
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="Day 1.html">JAVA VS JAVASCRIPT</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    DAY 2
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="displayin js.html">DISLAY METHODS IN JS</a></li>
+                                    <li><a class="dropdown-item" href="reservekeywords.html">RESERVE KEY WORDS</a></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    DAY 3
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="variables.html">VARIABLES</a></li>
+                                    <li><a class="dropdown-item" href="historyuofjs.html">HISTORY OF JS.</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    DAY 4
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="string.html">IDENTIFICATION OF A STRING </a></li>
+                                    <li><a  class="dropdown-item" href="biginit.html">DIFFERENCE BETWEEEN BIGINT AND NO</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    DAY 5
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="array.html">ARRAY</a></li>
+                                </ul>
+                            </li>
+                        </ul> 
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    DAY 6
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="operators.html">OPERATORS</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    DAY 7
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="retirement.html">RETIREMENT CALCULATOR</a></li>
+                                    <li><a  class="dropdown-item" href="calculator.html">SIMPLE CALCULATOR</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <h1>RESERVE KEY WORDS IN JS.</h1>
+                <p>
+                    Reserved keywords in JavaScript are words that have special meaning in the language and 
+                    cannot be used as identifiers (such as variable names, function names, etc.). 
+                    Here are explanations of six reserved keywords in JavaScript:
+                </p>
+                <h2>BREAK</h2>
+                <P>
+                    The break keyword is used to terminate a loop or switch statement.
+                    When break is encountered inside a loop or switch, the control is transferred
+                    to the statement immediately following the loop or switch.
+                </P>
+                <h2>CONTINUE</h2>
+                <p>            
+                    The continue keyword is used to skip the current iteration of a loop and continue to the next iteration.
+                    When continue is encountered inside a loop, the current iteration of the loop is stopped, 
+                    and the loop proceeds to the next iteration.
+                </p>
+                <h2>FUNCTION</h2>
+                <P>
+                    The function keyword is used to declare a function in JavaScript.
+                     are blocks of code that can be reused and called at various points in a program.
+                </P>
+                <h2>RETURN</h2>
+                <P>
+                    The return keyword is used to explicitly return a value from a function.
+                    When a return statement is executed inside a function, the function stops executing, 
+                    and the specified value is returned as the result of the function call.
+                </P>
+                <h2>IF</h2>
+                <p>
+                    The if keyword is used to start an if statement, 
+                    which executes a block of code if a specified condition is true.
+                    It is often used for conditional execution in JavaScript programs.
+                </p>
+                <h2>VAR</h2>
+                <p>
+                    The var keyword is used to declare a variable in JavaScript.
+                    Variables declared with var are function-scoped (or globally scoped) and can be 
+                    redeclared and reassigned within their scope.
+                </p>
             </div>
         </div>
-    </div>
-    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'></script>
-</body>
+        <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'></script>
+    </body>
 </html>
